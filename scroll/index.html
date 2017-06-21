@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div style="overflow:hidden; position:relative">
+<img src="map.jpg" alt="" width="1854" height="990" usemap="#Map"/>
+  <map name="Map"><area shape="circle" coords="7,401,58" href="#layer"><area shape="circle" coords="914,201,58" href="#layer"><area shape="circle" coords="914,329,58" href="#layer"><area shape="circle" coords="598,258,58" href="#layer"><area shape="circle" coords="244,403,58" href="#layer"><area shape="circle" coords="1195,702,58" href="#layer"><area shape="circle" coords="1142,601,58" href="#layer"><area shape="circle" coords="1078,889,58" href="#layer"><area shape="circle" coords="919,916,58" href="#layer"><area shape="circle" coords="601,906,58" href="#layer"><area shape="circle" coords="737,861,58" href="#layer"><area shape="circle" coords="686,563,58" href="#layer">
+        <area shape="circle" coords="226,508,58" href="#layer">
+        <area shape="circle" coords="996,267,58" href="#layer">
+        <area shape="circle" coords="822,263,58" href="#layer">
+        <area shape="circle" coords="637,447,58" href="#layer">
+        <area shape="circle" coords="540,366,58" href="#layer">
+        <area shape="circle" coords="544,560,58" href="#layer">
+        <area shape="circle" coords="637,447,58" href="#layer">
+        <area shape="circle" coords="553,186,56" href="#layer">
+        <area shape="circle" coords="544,560,58" href="#layer">
+  </map>
+    <div id="layer" style="position:absolute; left: 100px; top: 100px; background:#4D61FF; padding:20px; display:none">
+        Любой текст на выбор<br>
+        <img src="media.jpg" width="200" height="200" alt=""/> 
+    </div>
+</div>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script>
+$(function()
+{
+	$("map area")
+	.mouseenter(function()
+	{
+		$($(this).attr("href")).show();
+	})
+	.mouseleave(function()
+	{
+		$($(this).attr("href")).hide();
+	});
+});
+</script>
+</body>
+</html>

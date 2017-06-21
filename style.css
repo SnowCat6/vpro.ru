@@ -1,0 +1,98 @@
+/* CSS Document */
+
+body{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+}
+body {
+	background-color: #131312;
+	padding:0; margin:0;
+}
+a{
+	color:white;
+}
+/************************/
+.body{
+	background:#0c3352;
+	border:solid 1px white;
+	border-left:none;
+	border-right:none;
+	padding:20px;
+}
+/************************/
+.padding{
+	padding-left:60px;
+	padding-right:60px;
+}
+/************************/
+.copyright{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.copyright td{
+	vertical-align:top;
+}
+/************************/
+.content{
+	max-width:1100px;
+	text-align:left;
+	line-height:150%;
+}
+/************************/
+.header{
+	padding:20px 0;
+}
+.login th{
+	color:white;
+}
+/************************/
+.body .table th{
+	color:white;
+	border-bottom-color:white;
+}
+/************************/
+.sample a{
+	text-decoration:none;
+}
+.sample h2{
+	font-weight:normal;
+}
+.sample div{
+	position:relative;
+	padding:15px 0;
+	overflow:hidden;
+	height:500px;
+}
+.sample iframe{
+	position:absolute;
+	left:0; top: 0; right: 0;
+}
+.sample span{
+	display:block;
+	position:absolute;
+	top:0; bottom:0;
+	left:0; right:0;
+}
+.sample div:before
+{
+	display:block;
+	content:" ";
+	position:absolute;
+	top: 0; height:50px;
+	left: 0; right: 0;
+	z-index:1;
+	
+	background:url(design/fade.png) repeat-x;
+}
+.sample div:after{
+	display:block;
+	content:" ";
+	position:absolute;
+	bottom: 0; height:50px;
+	left: 0; right: 0;
+	z-index:1;
+	
+	background:url(design/fade.png) repeat-x 0 -50px;
+}
+
